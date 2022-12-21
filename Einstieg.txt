@@ -1,0 +1,22 @@
+1. Select job from employee where ename = 'SMITH';
+2. select empno, ename from emloyee where job = 'SALESMAN';
+3. select * from employee where job = 'ANALYST' and sal = 3000;
+4. select * from department;
+5. select distinct sal from employee;
+6. select loc from department where deptno = 20;
+7. select empno, sal from employee order by sal;
+8. select ename from employee oder by hiredate desc;
+9. select ename from employee where  mgr = 7698;
+10. select distinct deptno from employee;
+    select distinct deptno from department;
+11. select empno, ename from employee where dpntno = 20;
+12. select job,deptno from employee group by(job,deptno);
+13. select ename, mgr from employee where hiredate < '31.12.87' and hiredate > '01.01.87'
+14. select * from employee where job = 'SALESMAN' and comm > 1000;
+15. select sal from employee where job = 'PRESIDENT';
+16. select distinct deptno, mgr from employee;
+17. select job from employee where deptno = 30;
+18. select ename from employee where job = 'CLERK' and (mgr = 7788 or mgr = 7698);
+19. select ename from employee where  sal <= 1500;
+20.
+21. select ename, job from employee order by job,deptno;

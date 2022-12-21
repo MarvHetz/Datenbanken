@@ -1,0 +1,3 @@
+Select ename, 12*(sal) "Kosten" from employee where deptno = 20 and comm is NULL order by ename;
+Select ename, nvl(mgr,1) "CHEF" from employee;
+Select sal "Gehalt" from employee where comm is not null order by sal desc;

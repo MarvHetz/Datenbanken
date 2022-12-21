@@ -1,0 +1,3 @@
+select e.ename from employee e, department d where e.deptno = d.deptno and d.dname = 'ACCOUNTING';
+select d.dname, e.* from department d, employee e where d.deptno = e.deptno and Loc = 'DALLAS';
+Select e.ename, d.loc from employee e, department d where e.deptno = d.deptno and dname not like 'SALES';
