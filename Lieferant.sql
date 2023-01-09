@@ -17,7 +17,7 @@ insert into Lieferant values(sys_guid(),'Schlosser','Schlossergasse',18,23456,'S
 
 insert into Lieferant values(sys_guid(),'Fischer','Fischersteig',19,34567,'Fischerdorf');
 
-update Artikel  set Lieferant = (select lieferant_id from Lieferant where name = 'Fischer') where Artikelnummer in (10000,12000);
+update Artikel set Lieferant = (select lieferant_id from Lieferant where name = 'Fischer') where Artikelnummer in (10000,12000);
 
 update Artikel set Lieferant = (select Lieferant_id from Lieferant wherer name = 'Schlosser') where Artikelnummer between 10001 and 10103;
 
