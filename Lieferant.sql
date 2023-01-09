@@ -27,4 +27,4 @@ select artikel from Artikel where lieferant in (select lieferant_id from Liefera
 
 select name, plz from lieferant where lieferant_id in (select lieferant from artikel where Preisgruppe between 'A' and 'D');
 
-select a.Artikelnummer, a.artikel, l.name, l.plz from artikel a, lieferant l where a.lieferant = l.lieferant_id and a.lieferant in (select lieferant_id from lieferant where name not like 'Schlosser');
+select a.Artikelnummer, a.artikel, l.name, l.plz from artikel a, lieferant l where a.lieferant = l.lieferant_id and l.name not like 'Schlosser';
