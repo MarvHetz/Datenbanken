@@ -33,6 +33,6 @@ select avg(mittagstemperatur) from temperatur where bewoelkung like '%bewoelkt' 
 
 select sum(niederschlag) from temperatur group by bewoelkung having avg(nachttemperatur) > 14.7;
 
-select bewoelkung, count(bewoelkung) from temperatur group by bewoelkung;
+select bewoelkung, count(*) from temperatur group by bewoelkung;
 
 select bewoelkung from temperatur group by bewoelkung having count(mittagstemperatur) >= 2;
